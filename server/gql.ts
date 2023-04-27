@@ -25,3 +25,21 @@ export function discussionGql(ghDiscussionCategoryId: string | undefined) {
           }
     }`;
 }
+
+// Single post
+export function discussionDetailGql(postId: number | undefined) {
+  return `{
+    repository(name: "DevBlog-yt", owner: "ninhpd-sefr") {
+      discussion(number: ${postId}) {
+        title
+        bodyHTML
+        createdAt
+        author {
+          login
+          url
+          avatarUrl
+        }
+      }
+    }
+  }`;
+}
