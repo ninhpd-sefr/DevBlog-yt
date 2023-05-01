@@ -44,8 +44,8 @@ const Home: NextPage = ({
       <title>Home page</title>
       <section>
         <div className="mt-3 text-center">
-          <h1 className="text-[3rem]">Welcome to devBlog</h1>
-          <p>A full-stack blog with Next.js, TailwindCss, github GraphQL</p>
+          <h1 className="text-[3rem]  ">Welcome to  ITKnowF</h1>
+          <p className="max-w-[40em]">ITKnowF là trang blog về lập trình và kĩ thuật phần mềm, cung cấp các bài viết về các ngôn ngữ lập trình ở FPT, web và ứng dụng di động, các kỹ thuật phát triển phần mềm.</p>
         </div>
       </section>
       <section className="flex flex-col items-center text-[1.15rem] mt-12">
@@ -66,11 +66,12 @@ const Home: NextPage = ({
             );
           })}
         </div>
+        <div className="flex flex-row flex-wrap justify-start pl-5">
         {filteredBlog.map((blog: BlogPost) => {
           return (
             <div
               key={blog.id}
-              className="max-w-[28em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-200 transition-all duration-300 "
+              className="max-w-[23em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-200 transition-all duration-300 "
             >
               <a href={blog.url} target="_blank" rel="noreferrer">
                 <BLogPreview
@@ -84,6 +85,7 @@ const Home: NextPage = ({
             </div>
           );
         })}
+        </div>
       </section>
     </main>
   );
