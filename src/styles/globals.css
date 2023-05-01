@@ -6,7 +6,7 @@
 
 @layer components {
   .layout {
-    @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-600 text-neutral-300 font-roboto;
+    @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-700 text-neutral-300 font-roboto;
   }
   .layer {
     @apply bg-sky-600 px-2 mt-2 font-semibold rounded-xl text-zinc-800;
